@@ -3,7 +3,7 @@
     xmlns="sap.m"
     xmlns:mvc="sap.ui.core.mvc">
     <Button
-    text="Say Hi!"
+    text="{i18n>showHelloButtonText}"
     press=".onShowHello"/>
     <Input
         value="{/recipient/name}"
