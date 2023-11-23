@@ -9,7 +9,7 @@ xmlns:mvc="sap.ui.core.mvc">
         items="{invoice>/Invoices}">
         <items>
             <ObjectListItem
-                 title="{invoice>Quantity} x {invoice>ProductName}"
+                title="{invoice>Quantity} x {invoice>ProductName}"
                 number="{
                     parts: [{path: 'invoice>ExtendedPrice'}, {path: 'view>/currency'}],
                     type: 'sap.ui.model.type.Currency',
@@ -17,8 +17,8 @@ xmlns:mvc="sap.ui.core.mvc">
                         showMeasure: false
                     }
                 }"
-                numberUnit="{view>/currency}"/>
-                
+                numberUnit="{view>/currency}"
+                numberState="{= ${invoice>ExtendedPrice} > 50 ? 'Error' : 'Success'}" />
         </items>
     </List>
 </mvc:View>
