@@ -8,8 +8,5 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "ui5-middleware-simpleproxy": "^3.2.8"
-  }
+  "license": "ISC"
 }
